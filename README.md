@@ -1,6 +1,6 @@
 # Alap Expression Parser — Python
 
-Server-side Python port of the Alap expression parser (`src/core/ExpressionParser.ts`). Use this to resolve Alap expressions in Python servers without a Node.js sidecar.
+[Alap](https://github.com/DanielSmith/alap) is a JavaScript library that turns links into dynamic menus with multiple curated targets. This is the server-side Python port of the expression parser, enabling expression resolution in Python servers without a Node.js sidecar.
 
 ## What's included
 
@@ -64,13 +64,13 @@ merged = merge_configs(config1, config2)
 Copy `expression_parser.py` and `validate_regex.py` into your project, or install from PyPI:
 
 ```bash
-pip install alap-core
+pip install alap
 # or, with uv (recommended):
-uv add alap-core
+uv add alap
 ```
 
 ## Used by
 
-- [flask-sqlite](../../../examples/servers/flask-sqlite/) server
-- [fastapi-postgres](../../../examples/servers/fastapi-postgres/) server
-- [django-sqlite](../../../examples/servers/django-sqlite/) server
+- [flask-sqlite](https://github.com/DanielSmith/alap/tree/main/examples/servers/flask-sqlite) server
+- [fastapi-postgres](https://github.com/DanielSmith/alap/tree/main/examples/servers/fastapi-postgres) server
+- [django-sqlite](https://github.com/DanielSmith/alap/tree/main/examples/servers/django-sqlite) server
