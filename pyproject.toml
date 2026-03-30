@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "alap-python"
-version = "0.1.0"
+version = "0.1.1"
 description = "Alap expression parser for Python — resolve link expressions server-side"
 readme = "README.md"
 license = "Apache-2.0"
@@ -26,12 +26,8 @@ classifiers = [
 Homepage = "https://alap.info"
 Repository = "https://github.com/DanielSmith/alap-python"
 
-[tool.setuptools.packages.find]
-where = ["."]
-include = ["alap*"]
-
-[tool.setuptools.package-dir]
-alap = "."
+[tool.setuptools]
+py-modules = ["expression_parser", "sanitize_url", "ssrf_guard", "validate_regex"]
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
